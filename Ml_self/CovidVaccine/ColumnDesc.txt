@@ -1,0 +1,28 @@
+parent_protein_id : parent protein ID
+protein_seq : parent protein sequence
+start_position : start position of peptide
+end_position : end position of peptide
+peptide_seq : peptide sequence
+chou_fasman : peptide feature, $\beta$ turn
+emini : peptide feature, relative surface accessibility
+kolaskar_tongaonkar : peptide feature, antigenicity
+parker : peptide feature, hydrophobicity
+isoelectric_point : protein feature
+aromacity: protein feature
+hydrophobicity : protein feature
+stability : protein feature
+and bcell and sars dataset have antibody valence(target value):
+
+target : antibody valence (target value)
+
+
+
+Due to spread of COVID-19, vaccine development is beingdemanded as soon as possible. Despite the importance of data analysis in vaccine development, there are not many simple data sets that data analysts can handle. We published the dataset and the sample code for Bcell epitope prediction, one of the key research topics in vaccine development, available for free. This dataset was developed during our research process and the data contained in it was obtained from IEDB and UniProt. We would like to express our deepest gratitude to everyone who helped us. We briefly describe the B-cell epitope predictions covered by this dataset.  For details, please refer to our paper and others. B-cells inducing antigen-specific immune responses in vivo produce large amounts of antigen-specific antibodies by recognizing the subregions (epitope regions) of antigen proteins. They can inhibit their functioning by binding antibodies to antigen proteins. Predicting of epitope regions is beneficial for the design and development of vaccines aimed to induce antigen-specific antibody production. We believe that this dataset and code will be widely useful not only for COVID-19 but also for future medical data analysis.
+
+The data: Information on whether or not an amino acid peptide exhibited antibody-inducing activity (marked by an activity label) could be obtained from IEDB,
+ which was used in many previous studies. Accordingly, this information was used as the label data. We also obtained the epitope candidate amino acid sequences (peptides)
+ and the activity label data from the B-cell epitope data provided in IEDB. The presented antibody proteins were restricted to IgG that constituted the most recorded type
+ in IEDB. For convenience, we excluded records representing different quantitative measures of antibody activity for the same peptide from experiments. The epitope data
+ obtained from IEDB corresponded to the five types of activity: "Positive-High," "Positive-Intermediate," "Positive-Low," "Positive," and "Negative." However, 
+due to the limited number of data elements marked with the "Positive-High," "Positive-Intermediate," and "Positive-Low" labels, we equally considered these labels as 
+"Positive", thereby attributing the task to a binary estimation.
